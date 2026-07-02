@@ -1,0 +1,17 @@
+{
+  "name": "老庄智慧",
+  "short_name": "老庄",
+  "description": "老子与庄子思想学习应用 — 道德经、庄子、道家哲学",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f0eb",
+  "theme_color": "#8b2500",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
