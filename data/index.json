@@ -1,0 +1,43 @@
+{
+  "ddj": {
+    "versions": [
+      "王弼本",
+      "帛书本",
+      "楚简本",
+      "竹简参考本"
+    ],
+    "translators": [
+      "河上公注",
+      "王弼注",
+      "通用白话译文",
+      "苏辙",
+      "白玉蟾《道德宝章》",
+      "黄元吉《道德经注释》",
+      "杜光庭《道德真经广圣义》"
+    ],
+    "chapterCount": 81
+  },
+  "zhuangzi": {
+    "groups": [
+      {
+        "name": "内篇",
+        "count": 7
+      },
+      {
+        "name": "外篇",
+        "count": 15
+      },
+      {
+        "name": "杂篇",
+        "count": 11
+      }
+    ],
+    "translators": [
+      "郭象注",
+      "成玄英疏"
+    ],
+    "translationName": "通用白话译文"
+  },
+  "conceptCount": 281,
+  "quoteCount": 168
+}

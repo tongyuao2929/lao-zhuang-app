@@ -1,0 +1,13 @@
+{
+  "source": "维基文库《南华真经注疏》底本，郭象注、成玄英疏",
+  "translators": [
+    "郭象注",
+    "成玄英疏",
+    "郭庆藩《庄子集释》"
+  ],
+  "translationName": "通用白话译文",
+  "translationSource": "通用白话译文据太极书馆《庄子》译文按原文大段对应整理（https://www.8bei8.com/book/zhuangzi_1.html 等）。",
+  "noteSources": {
+    "郭庆藩《庄子集释》": "据国学导航《庄子集释》（清郭庆藩，http://www.guoxue123.com/zhibu/0101/03zzjs/index.htm）整理。"
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="太极">
+  <rect width="512" height="512" rx="112" fill="#fffdf8"/>
+  <defs>
+    <clipPath id="taiji-icon">
+      <circle cx="256" cy="256" r="174"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#taiji-icon)">
+    <rect x="82" y="82" width="174" height="348" fill="#fffdf8"/>
+    <rect x="256" y="82" width="174" height="348" fill="#25221d"/>
+    <circle cx="256" cy="169" r="87" fill="#fffdf8"/>
+    <circle cx="256" cy="343" r="87" fill="#25221d"/>
+    <circle cx="256" cy="169" r="34" fill="#25221d"/>
+    <circle cx="256" cy="343" r="34" fill="#fffdf8"/>
+  </g>
+  <circle cx="256" cy="256" r="174" fill="none" stroke="#25221d" stroke-width="24"/>
+</svg>
