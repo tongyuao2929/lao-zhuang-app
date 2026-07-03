@@ -1,11 +1,11 @@
-const CACHE = 'laozhuang-v56';
+const CACHE = 'laozhuang-v57';
 const URLS = [
   './index.html',
   './manifest.json',
   './icon.svg',
-  './app.js?v=20260703-scroll-hints',
-  './data/index.json?v=20260703-scroll-hints',
-  './data/quotes.json?v=20260703-scroll-hints'
+  './app.js?v=20260703-footer-statement',
+  './data/index.json?v=20260703-footer-statement',
+  './data/quotes.json?v=20260703-footer-statement'
 ];
  self.addEventListener('install', e => {
    e.waitUntil(caches.open(CACHE).then(c => c.addAll(URLS)).then(() => self.skipWaiting()));
