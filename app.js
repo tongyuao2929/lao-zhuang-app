@@ -2,7 +2,7 @@
 (function () {
   const $ = document.querySelector.bind(document);
   const $$ = document.querySelectorAll.bind(document);
-  const DATA_VERSION = "20260703-footer-statement";
+  const DATA_VERSION = "20260703-laozi-nav-label";
 
   let tab = "home";
   let curVer = "王弼本";
@@ -268,7 +268,7 @@
     const q = QUOTES[Math.floor(Math.random() * QUOTES.length)] || { t: "道可道，非常道", s: "《道德经》第一章" };
     const quoteClick = q.k === "zz" ? "app.openQuote('zz'," + Number(q.i || 0) + "," + jsArg(q.g || "内篇") + ")" : "app.openQuote('ddj'," + Number(q.n || 1) + ")";
     const stats = [
-      ["道德经", (APP_INDEX?.ddj?.versions?.length || 4) + " 个版本 · 81 章", "ddj"],
+      ["老子", (APP_INDEX?.ddj?.versions?.length || 4) + " 个版本 · 81 章", "ddj"],
       ["庄子", "33 篇 · 逐段注疏", "zz"],
       ["玄理", (APP_INDEX?.conceptCount || 0) + " 个主题", "concepts"],
       ["源流", "各版原文 · 历代注疏", "lineage"],
