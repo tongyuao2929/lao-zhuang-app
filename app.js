@@ -2,7 +2,7 @@
 (function () {
   const $ = document.querySelector.bind(document);
   const $$ = document.querySelectorAll.bind(document);
-  const DATA_VERSION = "20260703-xuanli-281-polish";
+  const DATA_VERSION = "20260703-scroll-hints";
 
   let tab = "home";
   let curVer = "王弼本";

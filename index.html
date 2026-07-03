@@ -142,7 +142,9 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid 
 .concept-search input{width:100%;height:44px;padding:0 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--text);outline:none}
 .concept-search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent),transparent 86%)}
 .concept-search span{min-width:72px;height:34px;display:inline-flex;align-items:center;justify-content:center;text-align:center;font-size:12px;color:var(--muted);padding:0 10px;border:1px solid var(--line);border-radius:999px;background:var(--soft)}
-.concepts-page .segmented{position:sticky;top:58px;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;background:var(--bg)}
+.concepts-page .segmented{position:sticky;top:58px;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;background:var(--bg);scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent),transparent 35%) transparent}
+.concepts-page .segmented::-webkit-scrollbar{height:4px}
+.concepts-page .segmented::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent),transparent 35%);border-radius:999px}
 .segmented button{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:38px;padding:0 13px;border:1px solid var(--line);border-radius:999px;background:var(--paper);cursor:pointer;color:var(--muted);font-weight:750;transition:border-color .16s,background .16s,color .16s,transform .16s}
 .segmented button:hover{border-color:var(--accent);color:var(--accent);background:var(--soft)}
 .segmented button small{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:20px;padding:0 6px;border-radius:999px;background:color-mix(in srgb,var(--line),transparent 35%);font-size:11px;color:inherit;opacity:.82;line-height:1}
@@ -214,7 +216,9 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid 
   .top-row{display:block}.reader-shell{padding:18px 16px;box-shadow:0 10px 28px rgba(61,45,28,.06)}.detail-text{font-size:17px;line-height:2;text-align:left}
   .translation-card,.annot-card,.empty-note{margin:10px 0;padding:13px 14px}.translation-bd,.annot-bd,.empty-note p{text-align:left;line-height:1.86}
   .passage-block{padding:14px 0}.detail-text.passage{margin:5px 0 9px}
-  .chapter-item{grid-template-columns:minmax(64px,auto) minmax(0,1fr) 28px;padding:12px 12px;column-gap:10px}.reader-tools{margin-top:10px;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:thin}.reader-tools label{flex:0 0 auto}.vs{max-width:190px}
+  .chapter-item{grid-template-columns:minmax(64px,auto) minmax(0,1fr) 28px;padding:12px 12px;column-gap:10px}.reader-tools{position:relative;margin-top:10px;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding:0 2px 7px 0;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent),transparent 35%) transparent}.reader-tools::-webkit-scrollbar{height:4px}.reader-tools::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent),transparent 35%);border-radius:999px}.reader-tools label{flex:0 0 auto}.vs{max-width:190px}
+  .reader-tools:after,.concepts-page .segmented:after{content:"›";position:sticky;right:0;z-index:2;flex:0 0 28px;width:28px;height:32px;margin-left:-8px;align-self:center;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--line),transparent 10%);border-radius:999px;background:color-mix(in srgb,var(--paper),transparent 5%);color:var(--accent);font-size:20px;font-weight:800;line-height:1;box-shadow:-12px 0 20px var(--bg)}
+  .concepts-page .segmented{padding-right:2px;padding-bottom:9px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
   .figure-row summary{grid-template-columns:1fr auto;gap:8px}.figure-copy{padding:0 16px 16px}
   .home-search-entry button{grid-template-columns:36px 1fr;gap:9px}.home-search-entry button>span:last-child{grid-column:2}
   .tab-bar{padding-left:6px;padding-right:6px}
@@ -240,7 +244,7 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid 
   <button class="tab-btn" data-tab="concepts"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7.2"/><path d="M12 4.8a7.2 7.2 0 0 1 0 14.4 3.6 3.6 0 0 1 0-7.2 3.6 3.6 0 0 0 0-7.2Z"/><circle cx="12" cy="8.4" r=".8" fill="currentColor" stroke="none"/><circle cx="12" cy="15.6" r=".8" fill="currentColor" stroke="none"/></svg><span>玄理</span></button>
   <button class="tab-btn" data-tab="lineage"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17.5c2.2-2.8 3.8-4.1 5.2-4.1 1.2 0 2.1 1 3.1 2 1.1 1.2 2.3 2.5 4.1 2.5 1.2 0 2.4-.5 3.6-1.5"/><path d="M5 20h14"/><path d="M7 11.5c.7-3.5 2.9-5.8 6.2-6.9"/><path d="M13.2 4.6c.1 2.9-1.4 5.2-4.2 6.9"/><path d="M16.5 6.8h2.8"/><path d="M15.2 9.8h4.1"/><path d="M14.2 12.8h3.4"/></svg><span>源流</span></button>
 </nav>
-<script src="app.js?v=20260703-xuanli-281-polish"></script>
+<script src="app.js?v=20260703-scroll-hints"></script>
 <script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
